@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../cubit/clock_cubit.dart';
 import 'app_button.dart';
 import 'indicator.dart';
 import 'prime_number_message.dart';
@@ -56,9 +54,5 @@ void showPrimeNumberDialog(BuildContext context, int number, Duration elapsedTim
         ),
       );
     },
-  ).then((_) {
-    // Clean up timer if dialog is dismissed by tapping outside
-    autoCloseTimer?.cancel();
-    context.read<ClockCubit>().startCheckingNumbers();
-  });
+  );
 }

@@ -3,19 +3,19 @@ import 'package:flutter/material.dart';
 class AppButton extends StatelessWidget {
   final String text;
   final Color color;
-  final VoidCallback? onPressed;  // Add onPressed callback
+  final VoidCallback? onPressed;
 
   const AppButton({
     super.key,
     required this.text,
     required this.color,
-    this.onPressed,  // Make it optional
+    this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: onPressed ?? () => Navigator.pop(context),  // Use provided callback or default
+      onPressed: onPressed ?? () => Navigator.pop(context),
       style: TextButton.styleFrom(
         backgroundColor: color,
         shape: RoundedRectangleBorder(

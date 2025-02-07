@@ -32,11 +32,11 @@ class DateDisplay extends StatelessWidget {
           children: [
             Text(
               formattedDate,
-              style: AppTextStyles.textMedium(context), // Now we can use context
+              style: AppTextStyles.textMedium(context),
             ),
             Text(
               " KW $calendarWeek",
-              style: AppTextStyles.textSmall(context), // Now we can use context
+              style: AppTextStyles.textSmall(context),
             ),
           ],
         ),
