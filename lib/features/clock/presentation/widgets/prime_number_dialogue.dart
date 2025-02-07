@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
-import '../cubit/clock_cubid.dart';
+import '../cubit/clock_cubit.dart';
 import 'app_button.dart';
 import 'indicator.dart';
 import 'prime_number_message.dart';

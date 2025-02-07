@@ -4,7 +4,7 @@ import 'package:intl/date_symbol_data_local.dart';
 import 'package:prime_watch/features/clock/presentation/widgets/prime_number_dialogue.dart';
 import 'package:prime_watch/features/clock/presentation/widgets/custom_snackbar.dart';
 import '../../../../injectory_container.dart';
-import '../cubit/clock_cubid.dart';
+import '../cubit/clock_cubit.dart';
 import '../cubit/clock_state.dart';
 import '../widgets/date_display.dart';
 import '../widgets/time_display.dart';
